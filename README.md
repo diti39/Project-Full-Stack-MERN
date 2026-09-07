@@ -16,10 +16,8 @@ The application demonstrates the implementation of a complete full-stack workflo
 - Users can only access and modify their own notes
 - Secure logout functionality
 
-## Screenshots
-
-[Login&Register](screenshots/login.png)
-[Login&Register](screenshots/register.png)
+![Login&Register](screenshots/login.png)
+![Login&Register](screenshots/register.png)
 
 ### Edit Note
 
@@ -71,6 +69,8 @@ The application demonstrates the implementation of a complete full-stack workflo
 - Password hashing
 - API rate limiting
 - Environment variables for sensitive configuration
+
+![RateLimiter](screenshots/ratelimiter.png)
 
 ### ⚡ Frontend
 
