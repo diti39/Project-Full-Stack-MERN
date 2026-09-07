@@ -61,7 +61,7 @@ const HomePage = () => {
           placeholder="Search notes..."
           value={search}
           onChange={(e) => {
-            setSort(e.target.value);
+            setSearch(e.target.value);
             setPage(1);
           }}
           className="input input-bordered w-full"
@@ -69,7 +69,10 @@ const HomePage = () => {
 
         <select
           value={sort}
-          onChange={(e) => setSort(e.target.value)}
+          onChange={(e) => {
+            setSort(e.target.value);
+            setPage(1);
+          }}
           className="select select-bordered"
         >
           <option value="newest">Newest</option>
