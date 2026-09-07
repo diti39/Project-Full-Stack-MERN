@@ -19,10 +19,6 @@ The application demonstrates the implementation of a complete full-stack workflo
 ![Login&Register](screenshots/login.png)
 ![Login&Register](screenshots/register.png)
 
-### Edit Note
-
-![Edit Note](screenshots/edit-note.png)
-
 ### 📝 Note Management
 
 - Create new notes
