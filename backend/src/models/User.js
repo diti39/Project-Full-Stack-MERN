@@ -1,23 +1,25 @@
 import mongoose from "mongoose";
 
-const noteSchema = new mongoose.Schema(
+const userSchema = new mongoose.Schema(
   {
-    title: {
+    name: {
       type: String,
       required: true,
       trim: true,
     },
 
-    content: {
+    email: {
       type: String,
       required: true,
+      unique: true,
+      lowercase: true,
       trim: true,
     },
 
-    user: {
-      type: mongoose.Schema.Types.ObjectId,
-      ref: "User",
+    password: {
+      type: String,
       required: true,
+      minlength: 6,
     },
   },
   {
@@ -25,6 +27,6 @@ const noteSchema = new mongoose.Schema(
   }
 );
 
-const Note = mongoose.model("Note", noteSchema);
+const User = mongoose.model("User", userSchema);
 
-export default Note;
+export default User;
